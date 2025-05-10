@@ -6,13 +6,9 @@
  * - Dos palabras exactamente iguales no son anagrama.
  """""""""
  
-def son_anagramas(palabra1, palabra2):
-    """
-    Esta función verifica si dos palabras son anagramas.
-    Retorna True si lo son, y False si no.
-    """
-
-    # Convertimos ambas palabras a minúsculas para evitar errores por mayúsculas/minúsculas
+def es_anagramas(palabra1, palabra2):
+    
+    # Convertimos las palabras a minúsculas para evitar errores 
     palabra1 = palabra1.lower()
     palabra2 = palabra2.lower()
 
@@ -21,11 +17,11 @@ def son_anagramas(palabra1, palabra2):
         return False
 
     # Ordenamos las letras de ambas palabras y las comparamos
-    # Si tienen las mismas letras en diferente orden, serán iguales tras ordenar
+    # Si tienen las mismas letras en diferente orden, serán iguales tras ordenar y seran anagramas
+    #por eso se usa el sorted para ordernar las palabras
     return sorted(palabra1) == sorted(palabra2)
 
-# Ejemplos de uso
-print(son_anagramas("roma", "amor"))     # True (anagramas)
-print(son_anagramas("hola", "hola"))     # False (iguales, no son anagramas)
-print(son_anagramas("perro", "gato"))    # False (no son anagramas)
-print(son_anagramas("Lento", "NetoL"))   # True (ignora mayúsculas/minúsculas)
+
+print(es_anagramas("roma", "amor"))     
+print(es_anagramas("hola", "hola"))     
+print(es_anagramas("perro", "gato"))    
