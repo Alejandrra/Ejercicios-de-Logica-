@@ -24,4 +24,5 @@ def es_anagramas(palabra1, palabra2):
 
 print(es_anagramas("roma", "amor"))     
 print(es_anagramas("hola", "hola"))     
-print(es_anagramas("perro", "gato"))    
+print(es_anagramas("perro", "gato"))  
+print(es_anagramas("Hola", "Adios"))  
