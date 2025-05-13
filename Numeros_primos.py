@@ -3,7 +3,7 @@
     Hecho esto, imprime los numeros primos entre 1 y 100
  """""""""
 def num_primos(n):
-    if n <= 1:
+    if n <= 1: #menores o igual 1
         return False  
 
     
@@ -12,4 +12,4 @@ def num_primos(n):
             return False  
     return True  
 
-print(num_primos(4))
+print(num_primos(4)) #true es primo , false es no primo
