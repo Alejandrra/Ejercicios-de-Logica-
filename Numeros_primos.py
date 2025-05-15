@@ -12,4 +12,4 @@ def num_primos(n):
             return False  
     return True  
 
-print(num_primos(999)) #true es primo , false es no primo
+print(num_primos(9990)) #true es primo , false es no primo
