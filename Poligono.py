@@ -28,7 +28,7 @@ def calcula_area(poligono):
     else:
         return "Tipo de polígono no soportado"  # muestra mensaje indicandole que el tipo no sporta
 
-# Ejemplos de uso
+
 triangulo = {"tipo": "Triangulo", "base": 20, "altura": 9}
 cuadrado = {"tipo": "Cuadrado", "lado": 6}
 rectangulo = {"tipo": "Rectangulo", "base": 5, "altura": 5}
